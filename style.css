@@ -1,0 +1,59 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html {
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+}
+.container {
+    max-height: unset;
+    height: auto;
+}
+@media screen and (max-width: 980px) {
+    .container {
+        max-height: 100vh;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+header {
+    background-color: #5fa9bc;
+    line-height: 60px;
+    height: 60px;
+    padding: 0 100px;
+}
+header .leftside {
+    float: left;
+    overflow: hidden;
+}
+header .rightside {
+    float: right;
+}
+.clearfix {
+    clear: both;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    flex: 1 0 auto;
+    background-color: #000;
+}
+main .breadcumb {
+    background-color: #cce1f0;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+main .content {
+    padding: 15px;
+}
